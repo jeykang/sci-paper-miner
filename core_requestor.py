@@ -12,7 +12,7 @@ from tqdm import tqdm
 import time
 from utils import touch
 
-ENDPOINT = 'https://core.ac.uk/api-v2'
+ENDPOINT = 'https://core.ac.uk:443/api-v2'
 SEARCH_METHOD = '/articles/search'
 SLEEP_BETWEEN_REQUESTS_S = 1 # to avoid overloading api
 
