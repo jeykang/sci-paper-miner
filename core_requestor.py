@@ -76,6 +76,7 @@ class CoreApiRequestor:
         all_articles=[]
         resp = self.request_url(url)
         result = json.loads(resp.decode('utf-8'))
+        print(result)
         print("\rFetching %d papers..." % (result['totalHits'])),
         all_articles.append(result)
         if (result['totalHits'] > self.pagesize):
