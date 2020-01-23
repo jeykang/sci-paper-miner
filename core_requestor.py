@@ -72,6 +72,7 @@ class CoreApiRequestor:
 
     # perform single query and return all resulting pages
     def get_base_query(self,method,query,fulltext, max_pages=100):
+        print(query)
         url = self.get_method_query_request_url(method, query, fulltext, 1)
         all_articles=[]
         resp = self.request_url(url)
